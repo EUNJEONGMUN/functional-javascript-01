@@ -123,7 +123,7 @@
   log(total);
 
   const reduce = (f, acc, iter) => {
-    if (!iter) {
+    if (!iter) { //만약 초기값이 없다면 첫 번째 요소를 초기값으로
       iter = acc[Symbol.iterator]();
       acc = iter.next().value;
     }
